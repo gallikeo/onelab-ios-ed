@@ -22,7 +22,7 @@ func applicationDidFinishLaunching(_ aNotification: Notification) {
     incrementBuildNumber()
     let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
     let buildNumber = ProcessInfo.processInfo.environment["BUILD_NUMBER"] ?? ""
-    let message = "Џривет „руг! ‘борка проекта успешно завершена! ‚ерсиЯ приложениЯ: \(version) Ќомер билда: \(buildNumber)"
+    let message = "РџСЂРёРІРµС‚ Р”СЂСѓРі! РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°! Р’РµСЂСЃРёСЏ РїСЂРёР»РѕР¶РµРЅРёСЏ: \(version) РќРѕРјРµСЂ Р±РёР»РґР°: \(buildNumber)"
     sendTelegramMessage(message: message)
 }
 
